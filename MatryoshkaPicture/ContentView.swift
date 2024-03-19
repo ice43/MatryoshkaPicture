@@ -16,7 +16,7 @@ struct ContentView: View {
                 .frame(width: 600, height: 500)
                 .offset(y: 200)
             
-            MatryoshkaView()
+            MatryoshkaView(start: start)
                 .offset(y: start ? -60 : 0)
                 .animation(.interpolatingSpring(
                     mass: 1,

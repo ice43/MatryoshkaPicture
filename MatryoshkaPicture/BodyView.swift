@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct BodyView: View {
+    let start: Bool
+    
     var body: some View {
         GeometryReader { geometry in
             let width = geometry.size.width
             let height = geometry.size.height
             
             shapeBody(width: width, height: height)
-            lowerBody(width: width, height: height)
+            lowerBody(width: width, height: height, start: start)
         }
     }
 }
 
 #Preview {
-    BodyView()
+    BodyView(start: true)
         .frame(width: 300, height: 300)
 }
 
@@ -111,6 +113,7 @@ struct shapeBody: View {
 struct lowerBody: View {
     let width: Double
     let height: Double
+    let start: Bool
     
     var body: some View {
         Path { path in
@@ -195,7 +198,7 @@ struct lowerBody: View {
         }
         .fill(
             LinearGradient(
-                gradient: Gradient(colors: [.purple, .blue]),
+                gradient: Gradient(colors: start ? [.purple, .blue] : [.purple, .pink]),
                 startPoint: .bottomLeading,
                 endPoint: .topTrailing
             )

@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct MatryoshkaView: View {
+    let start: Bool
+    
     var body: some View {
         ZStack {
-            BodyView()
-            HeadView()
+            BodyView(start: start)
+            HeadView(start: start)
             HeartView()
         }
         .frame(width: 300, height: 300)
@@ -19,5 +21,5 @@ struct MatryoshkaView: View {
 }
 
 #Preview {
-    MatryoshkaView()
+    MatryoshkaView(start: true)
 }

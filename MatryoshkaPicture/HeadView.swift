@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct HeadView: View {
+    let start: Bool
+    
     var body: some View {
         GeometryReader { geometry in
             let width = geometry.size.width
             let height = geometry.size.height
             
-            upperBody(width: width, height: height)
+            upperBody(width: width, height: height, start: start)
             shapeFace(width: width, height: height)
             
             face(width: width, height: height)
@@ -28,13 +30,14 @@ struct HeadView: View {
 }
 
 #Preview {
-    HeadView()
+    HeadView(start: false)
         .frame(width: 300, height: 300)
 }
 
 struct upperBody: View {
     let width: Double
     let height: Double
+    let start: Bool
     
     var body: some View {
         Path { path in
@@ -133,7 +136,7 @@ struct upperBody: View {
         }
         .fill(
             LinearGradient(
-                gradient: Gradient(colors: [.purple, .pink]),
+                gradient: Gradient(colors: start ? [.purple, .pink] : [.purple, .clear]),
                 startPoint: .bottomTrailing,
                 endPoint: .topLeading
             )
