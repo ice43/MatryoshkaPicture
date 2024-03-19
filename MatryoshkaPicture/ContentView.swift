@@ -18,12 +18,6 @@ struct ContentView: View {
             
             MatryoshkaView()
                 .offset(y: start ? -60 : 0)
-//                .animation(.spring(
-//                    response: 3,
-//                        dampingFraction: 0,
-//                        blendDuration: 0
-//                 ).repeatForever(autoreverses: true))
-            
                 .animation(.interpolatingSpring(
                     mass: 1,
                     stiffness: 600,
