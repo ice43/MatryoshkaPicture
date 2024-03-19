@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD4A1DEE2BA8AD7700EBDA3C /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A1DED2BA8AD7700EBDA3C /* HeadView.swift */; };
+		CD4D45FA2BA981B700A1BAC5 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D45F92BA981B700A1BAC5 /* BodyView.swift */; };
+		CD4D45FC2BA98CC000A1BAC5 /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D45FB2BA98CC000A1BAC5 /* HeartView.swift */; };
+		CD4D45FE2BA9964900A1BAC5 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D45FD2BA9964900A1BAC5 /* FieldView.swift */; };
+		CD4D46002BA99A8100A1BAC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D45FF2BA99A8100A1BAC5 /* ContentView.swift */; };
 		CDB6950B2BA87A78008F9503 /* MatryoshkaPictureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB6950A2BA87A78008F9503 /* MatryoshkaPictureApp.swift */; };
-		CDB6950D2BA87A78008F9503 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB6950C2BA87A78008F9503 /* ContentView.swift */; };
+		CDB6950D2BA87A78008F9503 /* MatryoshkaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB6950C2BA87A78008F9503 /* MatryoshkaView.swift */; };
 		CDB6950F2BA87A79008F9503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB6950E2BA87A79008F9503 /* Assets.xcassets */; };
 		CDB695122BA87A79008F9503 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB695112BA87A79008F9503 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD4A1DED2BA8AD7700EBDA3C /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
+		CD4D45F92BA981B700A1BAC5 /* BodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
+		CD4D45FB2BA98CC000A1BAC5 /* HeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
+		CD4D45FD2BA9964900A1BAC5 /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
+		CD4D45FF2BA99A8100A1BAC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CDB695072BA87A78008F9503 /* MatryoshkaPicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatryoshkaPicture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB6950A2BA87A78008F9503 /* MatryoshkaPictureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatryoshkaPictureApp.swift; sourceTree = "<group>"; };
-		CDB6950C2BA87A78008F9503 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CDB6950C2BA87A78008F9503 /* MatryoshkaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatryoshkaView.swift; sourceTree = "<group>"; };
 		CDB6950E2BA87A79008F9503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDB695112BA87A79008F9503 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD4D45F82BA9818600A1BAC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDB6950E2BA87A79008F9503 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CDB694FE2BA87A77008F9503 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +70,13 @@
 			isa = PBXGroup;
 			children = (
 				CDB6950A2BA87A78008F9503 /* MatryoshkaPictureApp.swift */,
-				CDB6950C2BA87A78008F9503 /* ContentView.swift */,
-				CDB6950E2BA87A79008F9503 /* Assets.xcassets */,
+				CD4D45FF2BA99A8100A1BAC5 /* ContentView.swift */,
+				CDB6950C2BA87A78008F9503 /* MatryoshkaView.swift */,
+				CD4A1DED2BA8AD7700EBDA3C /* HeadView.swift */,
+				CD4D45F92BA981B700A1BAC5 /* BodyView.swift */,
+				CD4D45FB2BA98CC000A1BAC5 /* HeartView.swift */,
+				CD4D45FD2BA9964900A1BAC5 /* FieldView.swift */,
+				CD4D45F82BA9818600A1BAC5 /* Resources */,
 				CDB695102BA87A79008F9503 /* Preview Content */,
 			);
 			path = MatryoshkaPicture;
@@ -137,7 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB6950D2BA87A78008F9503 /* ContentView.swift in Sources */,
+				CDB6950D2BA87A78008F9503 /* MatryoshkaView.swift in Sources */,
+				CD4D45FE2BA9964900A1BAC5 /* FieldView.swift in Sources */,
+				CD4D46002BA99A8100A1BAC5 /* ContentView.swift in Sources */,
+				CD4A1DEE2BA8AD7700EBDA3C /* HeadView.swift in Sources */,
+				CD4D45FC2BA98CC000A1BAC5 /* HeartView.swift in Sources */,
+				CD4D45FA2BA981B700A1BAC5 /* BodyView.swift in Sources */,
 				CDB6950B2BA87A78008F9503 /* MatryoshkaPictureApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
